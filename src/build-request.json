@@ -1,0 +1,146 @@
+{
+  "kind": "build_request",
+  "title": "Modern black-and-white marketing website for 'Column and Case' menswear brand",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Create a responsive multi-section marketing website for the modern men’s fashion brand named “Column and Case” with a neat, clean, plain black-and-white aesthetic.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Create a website for modern mens fashion name is column and case, keep it neat colour palette is black and white keep it neat clean and plain"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Site name “Column and Case” is prominently displayed in the header and page title",
+        "All pages/sections use a strictly black/white/gray palette (no color accents)",
+        "Layout is minimal with ample whitespace and consistent spacing across breakpoints (mobile/tablet/desktop)"
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Implement a simple navigation and page structure suitable for a small fashion brand site: Home, Collection, About, and Contact (can be separate routes or clearly separated sections).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Create a website for modern mens fashion name is column and case"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Users can access Home, Collection, About, and Contact from a top navigation (desktop) and a mobile-friendly menu (mobile)",
+        "Navigation clearly indicates the current page/section",
+        "All navigation items work without console errors"
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "text": "Add a “Collection” area presenting a clean product grid for modern menswear with placeholder items (e.g., outerwear, shirting, trousers, accessories), each showing an image, product name, and price.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Collection grid renders at least 8 products with consistent card layout",
+        "Each product card shows an image, name, and price in English",
+        "Grid is responsive (1 column on small screens, increasing on larger screens)"
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "text": "Add an “About” section describing the brand in a minimal editorial style using English copy (short and restrained).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ]
+      },
+      "acceptanceCriteria": [
+        "About content is in English and references “Column and Case”",
+        "Typography is readable and consistent with the minimalist theme",
+        "Section is accessible via navigation"
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "text": "Add a “Contact” section with a simple contact form UI (name, email, message) and a clean footer with basic brand links.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Contact form includes fields for name, email, and message and a submit button",
+        "Submitting the form shows a clear on-screen confirmation (no external email integration required)",
+        "Footer includes brand name and at least 2 links (e.g., Collection, About)"
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "text": "Apply a coherent visual theme across the site that stays strictly black-and-white and feels modern, neat, clean, and plain (typography, spacing scale, button style, borders, and hover states).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "keep it neat colour palette is black and white keep it neat clean and plain"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Buttons/links/inputs share a consistent style system (e.g., thin borders, subtle hover inversion)",
+        "No bright colors are introduced; only black/white/grays are used",
+        "Overall styling looks intentionally minimalist (not default browser styling)"
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "text": "Add and render generated static brand images from frontend/public/assets/generated (do not fetch images from the backend).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Generated images exist under frontend/public/assets/generated and are referenced directly by the React UI",
+        "At least a logo/wordmark and a hero image are visibly used on the site",
+        "No backend endpoints are used for serving these images"
+      ]
+    }
+  ],
+  "constraints": [
+    "Use English for all user-facing text",
+    "Do not add third-party authentication or external database dependencies",
+    "Do not modify files under frontend/src/components/ui or the immutable hook files listed by the platform"
+  ],
+  "nonGoals": [
+    "Implementing checkout, payments, or shopping cart functionality",
+    "Inventory management or admin dashboards",
+    "Integrating email delivery services for the contact form"
+  ],
+  "imageRequirements": {
+    "required": [
+      "Minimalist black wordmark logo on white background (column-and-case-wordmark.dim_1200x400.png)",
+      "Minimal editorial hero banner with black-and-white menswear silhouette/abstract fashion shapes (column-and-case-hero.dim_2400x1200.png)",
+      "Set of 8 minimalist black-and-white product placeholder images with subtle garment outlines (cc-product-01.dim_800x1000.png)",
+      "Set of 8 minimalist black-and-white product placeholder images with subtle garment outlines (cc-product-02.dim_800x1000.png)",
+      "Set of 8 minimalist black-and-white product placeholder images with subtle garment outlines (cc-product-03.dim_800x1000.png)",
+      "Set of 8 minimalist black-and-white product placeholder images with subtle garment outlines (cc-product-04.dim_800x1000.png)",
+      "Set of 8 minimalist black-and-white product placeholder images with subtle garment outlines (cc-product-05.dim_800x1000.png)",
+      "Set of 8 minimalist black-and-white product placeholder images with subtle garment outlines (cc-product-06.dim_800x1000.png)",
+      "Set of 8 minimalist black-and-white product placeholder images with subtle garment outlines (cc-product-07.dim_800x1000.png)",
+      "Set of 8 minimalist black-and-white product placeholder images with subtle garment outlines (cc-product-08.dim_800x1000.png)"
+    ],
+    "edits": []
+  }
+}

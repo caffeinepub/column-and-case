@@ -1,0 +1,22 @@
+{
+  "backend/main.mo": "Empty Motoko actor with no functionality.",
+  "feature_evidence.json": "Feature evidence report mapping features to involved files and components.",
+  "frontend-file-summaries.txt": "Text file providing short descriptions of each frontend source file.",
+  "frontend/index.css": "Tailwind base and theme variables defining monochrome color tokens and global styles.",
+  "frontend/index.html": "HTML entry point mounting the React app and loading main.tsx.",
+  "frontend/src/App.tsx": "Main React component assembling site sections and tracking active section via IntersectionObserver.",
+  "frontend/src/components/AboutSection.tsx": "Minimalist about section with centered editorial brand copy.",
+  "frontend/src/components/CollectionSection.tsx": "Product grid rendering menswear items from static data.",
+  "frontend/src/components/ContactSection.tsx": "Contact form with local state, validation, and a temporary success message.",
+  "frontend/src/components/HeroSection.tsx": "Hero banner with background image, brand title, tagline, and scroll-to-collection button.",
+  "frontend/src/components/SiteFooter.tsx": "Footer with brand info, navigation links, and caffeine.ai attribution.",
+  "frontend/src/components/SiteHeader.tsx": "Responsive header component with logo, desktop and mobile navigation, and smooth scrolling to sections.",
+  "frontend/src/data/collection.ts": "Defines a Product interface and exports a static list of eight product objects with names, prices, and images.",
+  "frontend/src/hooks/useActor.ts": "React hook that creates and manages a backend actor based on Internet Identity authentication using react-query.",
+  "frontend/src/hooks/useInternetIdentity.ts": "React context and provider for managing Internet Identity authentication, login state, and persisted identities.",
+  "frontend/src/hooks/useQueries.ts": "Placeholder module noting no backend queries are needed and that product data is static.",
+  "frontend/src/index.css": "Tailwind CSS base setup with custom OKLCH variables, dark mode tokens, and global styles.",
+  "frontend/src/main.tsx": "Application entry point that mounts React, sets up react-query, Internet Identity, and global styles.",
+  "frontend/tailwind.config.js": "Tailwind config enabling dark mode, custom OKLCH color tokens, extended theme options, and plugins.",
+  "project_state.json": "Tracks project metadata including version, requirements, features, and image asset needs for the site."
+}

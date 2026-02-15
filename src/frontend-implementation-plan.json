@@ -1,0 +1,189 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Column and Case — minimalist black-and-white marketing site",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "summary": "Build a responsive multi-section marketing site for “Column and Case” with a clean black/white aesthetic.",
+      "acceptanceCriteria": [
+        "Site name “Column and Case” is prominently displayed in the header and page title",
+        "All pages/sections use a strictly black/white/gray palette (no color accents)",
+        "Layout is minimal with ample whitespace and consistent spacing across breakpoints (mobile/tablet/desktop)"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "create",
+          "description": "Create the main single-page marketing layout with a header (prominent “Column and Case”), hero, and required sections; ensure responsive spacing and structure across breakpoints."
+        },
+        {
+          "path": "frontend/index.html",
+          "operation": "modify",
+          "description": "Verify the document title is set to “Column and Case” and language is English; keep metadata minimal and aligned with the monochrome brand."
+        },
+        {
+          "path": "frontend/src/components/MarketingLayout.tsx",
+          "operation": "create",
+          "description": "Add a reusable layout wrapper providing centered container width, consistent section spacing, and a minimal black/white background treatment."
+        }
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "summary": "Add top navigation for Home, Collection, About, Contact with a mobile-friendly menu and current-section indication.",
+      "acceptanceCriteria": [
+        "Users can access Home, Collection, About, and Contact from a top navigation (desktop) and a mobile-friendly menu (mobile)",
+        "Navigation clearly indicates the current page/section",
+        "All navigation items work without console errors"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/SiteHeader.tsx",
+          "operation": "create",
+          "description": "Implement a responsive header with desktop nav links and a mobile menu toggle; include active-state styling for the current section."
+        },
+        {
+          "path": "frontend/src/hooks/useActiveSection.ts",
+          "operation": "create",
+          "description": "Add a lightweight hook to track the currently visible section (e.g., via IntersectionObserver) to drive the navigation active indicator."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Wire SiteHeader into the page and ensure nav links scroll to the correct sections (Home/Collection/About/Contact) without console errors."
+        }
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "summary": "Implement a responsive Collection product grid with at least 8 placeholder menswear items (image, name, price).",
+      "acceptanceCriteria": [
+        "Collection grid renders at least 8 products with consistent card layout",
+        "Each product card shows an image, name, and price in English",
+        "Grid is responsive (1 column on small screens, increasing on larger screens)"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/data/collection.ts",
+          "operation": "create",
+          "description": "Create placeholder product data (at least 8 items) with English names/prices and image paths pointing to the generated product images in frontend/public/assets/generated (cc-product-01.dim_800x1000.png through cc-product-08.dim_800x1000.png)."
+        },
+        {
+          "path": "frontend/src/components/CollectionSection.tsx",
+          "operation": "create",
+          "description": "Build the Collection section with a clean, consistent product card grid; use responsive Tailwind classes to scale from 1 column on small screens upward."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Wire the CollectionSection into the main page and ensure it is reachable via navigation and section anchors."
+        }
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "summary": "Add an About section with short, restrained English editorial copy describing Column and Case.",
+      "acceptanceCriteria": [
+        "About content is in English and references “Column and Case”",
+        "Typography is readable and consistent with the minimalist theme",
+        "Section is accessible via navigation"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/AboutSection.tsx",
+          "operation": "create",
+          "description": "Create an About section with minimalist editorial typography, short English copy referencing “Column and Case”, and clean spacing suitable for the monochrome theme."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Wire the AboutSection into the main page with an anchor target so navigation can reach it reliably."
+        }
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "summary": "Add a Contact section with a simple contact form UI and a clean footer with basic brand links.",
+      "acceptanceCriteria": [
+        "Contact form includes fields for name, email, and message and a submit button",
+        "Submitting the form shows a clear on-screen confirmation (no external email integration required)",
+        "Footer includes brand name and at least 2 links (e.g., Collection, About)"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/ContactSection.tsx",
+          "operation": "create",
+          "description": "Implement the Contact section with a local-only form UI (name, email, message) and an on-screen submission confirmation state (no external integrations)."
+        },
+        {
+          "path": "frontend/src/components/SiteFooter.tsx",
+          "operation": "create",
+          "description": "Create a minimal footer in black/white with the brand name and at least two internal links (e.g., Collection, About) that scroll to their sections."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Wire ContactSection and SiteFooter into the page and ensure footer links work without console errors."
+        }
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "summary": "Apply a cohesive minimalist black-and-white design system across typography, spacing, borders, buttons, inputs, and hover states.",
+      "acceptanceCriteria": [
+        "Buttons/links/inputs share a consistent style system (e.g., thin borders, subtle hover inversion)",
+        "No bright colors are introduced; only black/white/grays are used",
+        "Overall styling looks intentionally minimalist (not default browser styling)"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/index.css",
+          "operation": "create",
+          "description": "Add global Tailwind layers and a monochrome design baseline (CSS variables or utility patterns) ensuring only black/white/grays are used; define consistent focus/hover states and typography defaults."
+        },
+        {
+          "path": "frontend/tailwind.config.js",
+          "operation": "modify",
+          "description": "Confirm Tailwind theme supports monochrome tokens (background/foreground/border) and adjust defaults if needed to avoid color accents; keep typography and spacing coherent."
+        },
+        {
+          "path": "frontend/src/components/MarketingLayout.tsx",
+          "operation": "modify",
+          "description": "Ensure layout-level spacing scale, section separators (thin borders), and consistent container widths are applied uniformly across all sections."
+        }
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "summary": "Render generated static brand images from frontend/public/assets/generated directly in the React UI (no backend fetching).",
+      "acceptanceCriteria": [
+        "Generated images exist under frontend/public/assets/generated and are referenced directly by the React UI",
+        "At least a logo/wordmark and a hero image are visibly used on the site",
+        "No backend endpoints are used for serving these images"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/SiteHeader.tsx",
+          "operation": "modify",
+          "description": "Reference and render the wordmark image directly from frontend/public/assets/generated/column-and-case-wordmark.dim_1200x400.png in the header/brand area (no backend usage)."
+        },
+        {
+          "path": "frontend/src/components/HeroSection.tsx",
+          "operation": "create",
+          "description": "Create a hero section that visibly uses the generated hero banner image frontend/public/assets/generated/column-and-case-hero.dim_2400x1200.png and includes restrained English headline/subcopy."
+        },
+        {
+          "path": "frontend/src/data/collection.ts",
+          "operation": "modify",
+          "description": "Ensure each of the 8 placeholder products references a distinct generated image: frontend/public/assets/generated/cc-product-01.dim_800x1000.png through frontend/public/assets/generated/cc-product-08.dim_800x1000.png, used directly by the UI."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Wire HeroSection into the top of the page and ensure all generated images are displayed via direct static paths (no backend calls)."
+        }
+      ]
+    }
+  ]
+}

@@ -1,2 +1,3 @@
-# column-and-case
-Exported from Caffeine project: Column and Case
+## Column and Case
+
+To run app build and run docker image: `docker build -t app . docker run -it --network host app`

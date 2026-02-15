@@ -1,0 +1,13 @@
+{
+  "frontend/src/App.tsx": "Main application component that orchestrates the single-page layout with smooth scroll navigation and active section tracking using IntersectionObserver.",
+  "frontend/src/components/SiteHeader.tsx": "Fixed header component with responsive navigation, mobile menu toggle, and active section highlighting based on scroll position.",
+  "frontend/src/components/HeroSection.tsx": "Full-screen hero section featuring the brand wordmark, hero image overlay, and call-to-action button with smooth scroll to collection.",
+  "frontend/src/components/CollectionSection.tsx": "Responsive product grid displaying 8 menswear items with hover effects and clean card layouts.",
+  "frontend/src/components/AboutSection.tsx": "Editorial-style about section with centered typography and brand story content in a minimalist layout.",
+  "frontend/src/components/ContactSection.tsx": "Contact form with local state management, validation, and success confirmation message display.",
+  "frontend/src/components/SiteFooter.tsx": "Minimal footer with brand info, navigation links, and required caffeine.ai attribution with UTM tracking.",
+  "frontend/src/data/collection.ts": "Static product data array containing 8 menswear items with names, prices, and image paths to generated assets.",
+  "frontend/src/index.css": "Global styles with strict monochrome OKLCH color system (black/white/grays only), zero border radius, and smooth scrolling behavior.",
+  "frontend/tailwind.config.js": "Tailwind configuration with monochrome color tokens, zero border radius, system font stack, and extended letter spacing for uppercase text.",
+  "frontend/src/hooks/useQueries.ts": "Empty placeholder file as no backend queries are needed for this static marketing site."
+}

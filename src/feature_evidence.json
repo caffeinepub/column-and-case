@@ -1,0 +1,142 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-create-a-responsive-multi-section-marketing-website-for-the-modern-men-s-fashion-brand-named-column-and-case-with-a-neat-clean-plain-black-and-white-aesthetic",
+      "featureTitle": "Create a responsive multi-section marketing website for the modern men’s fashion brand named “Column and Case” with a neat, clean, plain black-and-white aesthetic.",
+      "files": [
+        "frontend/index.html",
+        "frontend/src/App.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-a-simple-navigation-and-page-structure-suitable-for-a-small-fashion-brand-site-home-collection-about-and-contact-can-be-separate-routes-or-clearly-separated-sections",
+      "featureTitle": "Implement a simple navigation and page structure suitable for a small fashion brand site: Home, Collection, About, and Contact (can be separate routes or clearly separated sections).",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/SiteHeader.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-a-collection-area-presenting-a-clean-product-grid-for-modern-menswear-with-placeholder-items-e-g-outerwear-shirting-trousers-accessories-each-showing-an-image-product-name-and-price",
+      "featureTitle": "Add a “Collection” area presenting a clean product grid for modern menswear with placeholder items (e.g., outerwear, shirting, trousers, accessories), each showing an image, product name, and price.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/CollectionSection.tsx",
+        "frontend/src/data/collection.ts"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-3"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-an-about-section-describing-the-brand-in-a-minimal-editorial-style-using-english-copy-short-and-restrained",
+      "featureTitle": "Add an “About” section describing the brand in a minimal editorial style using English copy (short and restrained).",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/AboutSection.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-4"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-a-contact-section-with-a-simple-contact-form-ui-name-email-message-and-a-clean-footer-with-basic-brand-links",
+      "featureTitle": "Add a “Contact” section with a simple contact form UI (name, email, message) and a clean footer with basic brand links.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/ContactSection.tsx",
+        "frontend/src/components/SiteFooter.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-5"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-apply-a-coherent-visual-theme-across-the-site-that-stays-strictly-black-and-white-and-feels-modern-neat-clean-and-plain-typography-spacing-scale-button-style-borders-and-hover-states",
+      "featureTitle": "Apply a coherent visual theme across the site that stays strictly black-and-white and feels modern, neat, clean, and plain (typography, spacing scale, button style, borders, and hover states).",
+      "files": [
+        "frontend/src/index.css",
+        "frontend/tailwind.config.js"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-6"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-and-render-generated-static-brand-images-from-frontend-public-assets-generated-do-not-fetch-images-from-the-backend",
+      "featureTitle": "Add and render generated static brand images from frontend/public/assets/generated (do not fetch images from the backend).",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/HeroSection.tsx",
+        "frontend/src/components/SiteHeader.tsx",
+        "frontend/src/data/collection.ts"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-7"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 3,
+  "summary": "Website project for modern men's fashion brand \"Column and Case\" with a neat, clean, plain black-and-white design.",
+  "architectural_notes": [],
+  "known_issues": [],
+  "isFixRequest": false,
+  "imageRequirements": "## Required Images\n- Minimalist black wordmark logo on white background (column-and-case-wordmark.dim_1200x400.png)\n- Minimal editorial hero banner with black-and-white menswear silhouette/abstract fashion shapes (column-and-case-hero.dim_2400x1200.png)\n- Set of 8 minimalist black-and-white product placeholder images with subtle garment outlines (cc-product-01.dim_800x1000.png)\n- Set of 8 minimalist black-and-white product placeholder images with subtle garment outlines (cc-product-02.dim_800x1000.png)\n- Set of 8 minimalist black-and-white product placeholder images with subtle garment outlines (cc-product-03.dim_800x1000.png)\n- Set of 8 minimalist black-and-white product placeholder images with subtle garment outlines (cc-product-04.dim_800x1000.png)\n- Set of 8 minimalist black-and-white product placeholder images with subtle garment outlines (cc-product-05.dim_800x1000.png)\n- Set of 8 minimalist black-and-white product placeholder images with subtle garment outlines (cc-product-06.dim_800x1000.png)\n- Set of 8 minimalist black-and-white product placeholder images with subtle garment outlines (cc-product-07.dim_800x1000.png)\n- Set of 8 minimalist black-and-white product placeholder images with subtle garment outlines (cc-product-08.dim_800x1000.png)",
+  "existing_features": [
+    {
+      "id": "feature-create-a-responsive-multi-section-marketing-website-for-the-modern-men-s-fashion-brand-named-column-and-case-with-a-neat-clean-plain-black-and-white-aesthetic",
+      "title": "Create a responsive multi-section marketing website for the modern men’s fashion brand named “Column and Case” with a neat, clean, plain black-and-white aesthetic.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-simple-navigation-and-page-structure-suitable-for-a-small-fashion-brand-site-home-collection-about-and-contact-can-be-separate-routes-or-clearly-separated-sections",
+      "title": "Implement a simple navigation and page structure suitable for a small fashion brand site: Home, Collection, About, and Contact (can be separate routes or clearly separated sections).",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-collection-area-presenting-a-clean-product-grid-for-modern-menswear-with-placeholder-items-e-g-outerwear-shirting-trousers-accessories-each-showing-an-image-product-name-and-price",
+      "title": "Add a “Collection” area presenting a clean product grid for modern menswear with placeholder items (e.g., outerwear, shirting, trousers, accessories), each showing an image, product name, and price.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-an-about-section-describing-the-brand-in-a-minimal-editorial-style-using-english-copy-short-and-restrained",
+      "title": "Add an “About” section describing the brand in a minimal editorial style using English copy (short and restrained).",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-contact-section-with-a-simple-contact-form-ui-name-email-message-and-a-clean-footer-with-basic-brand-links",
+      "title": "Add a “Contact” section with a simple contact form UI (name, email, message) and a clean footer with basic brand links.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-a-coherent-visual-theme-across-the-site-that-stays-strictly-black-and-white-and-feels-modern-neat-clean-and-plain-typography-spacing-scale-button-style-borders-and-hover-states",
+      "title": "Apply a coherent visual theme across the site that stays strictly black-and-white and feels modern, neat, clean, and plain (typography, spacing scale, button style, borders, and hover states).",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-and-render-generated-static-brand-images-from-frontend-public-assets-generated-do-not-fetch-images-from-the-backend",
+      "title": "Add and render generated static brand images from frontend/public/assets/generated (do not fetch images from the backend).",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Create a website for modern men's fashion clothing store brand \"Column and Case\" with a neat, clean, plain black-and-white color palette.",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Column and Case",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}
